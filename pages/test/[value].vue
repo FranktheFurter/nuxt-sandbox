@@ -2,12 +2,11 @@
 import { useRoute } from "vue-router";
 
 const route = useRoute();
-const val = route.params.value;
 </script>
 
 <template>
   <div>
-    <h1>Page: {{ val }}</h1>
+    <h1>Page: {{ route.params.value }}</h1>
   </div>
 </template>
 
