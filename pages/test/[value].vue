@@ -2,11 +2,12 @@
 import { useRoute } from "vue-router";
 
 const route = useRoute();
+const propsFromRoute = route.params.value;
 </script>
 
 <template>
-  <div>
-    <h1>Page: {{ route.params.value }}</h1>
+  <div style="cursor: pointer">
+    <h1>Page: {{ propsFromRoute }}</h1>
   </div>
 </template>
 
