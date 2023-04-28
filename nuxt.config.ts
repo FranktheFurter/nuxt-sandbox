@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   modules: ["@unocss/nuxt"],
   app: {
-    baseURL: "/nuxt-sandbox/", // baseURL: '/<repository>/'
+    baseURL: "/nuxt-sandbox/",
   },
-  ssr: false, //server side rendered enabled //When true
+  ssr: false,
 })
