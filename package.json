@@ -7,7 +7,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "gh-pages -d dist"
+    "deploy": "nuxt generate && touch .output/public/.nojekyll && gh-pages --dotfiles -d .output/public"
   },
   "devDependencies": {
     "@types/node": "^18",
@@ -20,5 +20,8 @@
     "eslint-plugin-vue": "^9.11.0",
     "gh-pages": "^5.0.0",
     "nuxt": "^3.4.2"
+  },
+  "dependencies": {
+    "nuxi": "^3.4.2"
   }
 }
