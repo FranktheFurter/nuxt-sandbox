@@ -1,0 +1,1 @@
+import{a as o,b as t,e as s,t as a,u as r,h as n,o as u}from"./entry.a0d8b0b2.js";const c={style:{cursor:"pointer"}},d=o({__name:"[value]",setup(p){const e=n().params.value;return(_,i)=>(u(),t("div",c,[s("h1",null,"Page: "+a(r(e)),1)]))}});export{d as default};

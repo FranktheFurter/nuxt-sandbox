@@ -1,0 +1,1 @@
+import{a as o,b as s,f as a,t as r,u as c,e as n,h as p,o as u}from"./entry.a0d8b0b2.js";import{p as l}from"./projects.be893135.js";const i=n("h1",null,"Catch all Projects",-1),x=o({__name:"[id]",setup(_){const e=p().params.id,t=l[e];return(m,f)=>(u(),s("div",null,[i,a(" "+r(c(t)),1)]))}});export{x as default};
