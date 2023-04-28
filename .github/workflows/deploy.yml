@@ -31,14 +31,8 @@ jobs:
       - name: Build Nuxt3 app
         run: npm run build
 
-      - name: Configure Git
-        run: |
-          git config --global user.name "Your Name"
-          git config --global user.email "youremail@example.com"
-
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.5
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages
-          folder: .output/public
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .output/public
